@@ -17,7 +17,7 @@ interface Params{
     params:{name:string};
 }
 
-async function Prediction({params}:Params) {
+async function PredictionPage({params}:Params) {
     const ageData = getPredictedAge(params.name);
     const genderData = getPredictedGender(params.name);
     const nationalityData = getPredictedNationality(params.name);
@@ -47,4 +47,4 @@ async function Prediction({params}:Params) {
     )
 }
 
-export default Prediction;
+export default PredictionPage;
